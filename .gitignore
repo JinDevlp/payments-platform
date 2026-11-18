@@ -1,0 +1,33 @@
+# Build output
+target/
+build/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Node / web
+node_modules/
+dist/
+
+# Secrets and local config — never commit
+.env
+.env.*
+*.pem
+*.tfvars
+!*.tfvars.example
+
+# Terraform state (contains secrets and resource IDs)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Claude Code personal files
+CLAUDE.local.md
+.claude/settings.local.json
